@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			Video
+		</title>
+		<meta charset="utf-8"> 
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta content="eCommerce HTML Template Free Download" name="keywords">
+        <meta content="eCommerce HTML Template Free Download" name="description">
+        
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+    	<video controls width="100%" height="240px" id="myvid">
+		  <source src="video1.mp4" type="video/mp4">
+
+
+    <script>
+    	var vid = document.getElementById('myvid');
+		vid.onended=function(){
+			alert('video ended');     
+			window.location.href="feedback.php";  
+	};
+		    </script>
+	</body>
+	</html>
